@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+    }
+
+    .app-container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    .version-container {
+        margin-bottom: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        border: 2px solid #444; /* Set slightly darker border color */
+        padding: 15px;
+    }
+
+    .version-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .download-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .download-link:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="#">Webtech Inc.</a></li>
+      <li><a href="bisai.html">BISAI</a></li>
+      <li class="active"><a href="tiff-trans2.html">TIFF-TRANS2</a></li>
+      <li><a href="cmyk2pdf.html">CMYK2PDF</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+    <div class="version-container">
+        <strong>1.1.1.0 (2024.01.10)</strong>
+        <ul>
+            <li>1bit tiff 合成対応
+                <ul>
+                    <li>出力ファイル名に"CMYK"を追加</li>
+                    <li>特色(PANTONE, DIC)指定がないLayerに対してAutoLut用の色を塗り替える</li>
+                </ul>
+            </li>
+            <li>TIFF-TRANS2.INI 改造
+                <ul>
+                    <li>「CustomSpotColor」追加</li>
+                    <li>出力、回転用の"[ROTATION]"セクション追加</li>
+                    <li>(無)回転、反転の画像を纏めて1個に出力するか、個別に出力するか選択可</li>
+                </ul>
+            </li>
+        </ul>
+        <a href="https://www.dropbox.com/scl/fi/sm5rxhv2t03ankdx4bzvl/TIFF-TRANS2_v2.2.1.0.zip?rlkey=99jofjja5yqhk99edks29xws3&dl=0" class="download-link" target="_blank">Download Version 2.2.1.0</a>
+        <a href="https://www.dropbox.com/scl/fi/ce65lkzpmnfb2bq1ym53v/XpdfRasterizerCOM-4.04.04.exe?rlkey=xuh5f66jkxzvxx1wdsc041w3o&dl=0" class="download-link" target="_blank">Download XpdfRasterizerCom 4.04.04</a>
+        <a href="https://www.dropbox.com/scl/fi/5g7hlddkz461ui3gdyh90/xpdf_japanese_pack.exe?rlkey=mgqu020vzyi7qau4l92rng6mc&dl=0" class="download-link" target="_blank">Download XpdfRasterizerCom日本語パック</a>
+        <a href="https://www.dropbox.com/scl/fi/gimwqu0r5jpw4muc9um7f/TIFF-TRANS2.docx?rlkey=vy7nashaano0k6udz9z4kqcqg&dl=0" class="download-link" target="_blank">Download 説明書</a>
+    </div>
+
+</div>
+
+</body>
+</html>

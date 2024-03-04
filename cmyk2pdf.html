@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+    }
+
+    .app-container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    .version-container {
+        margin-bottom: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        border: 2px solid #444; /* Set slightly darker border color */
+        padding: 15px;
+    }
+
+    .version-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .download-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .download-link:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="#">Webtech Inc.</a></li>
+      <li><a href="bisai.html">BISAI</a></li>
+      <li><a href="tiff-trans2.html">TIFF-TRANS2</a></li>
+      <li class="active"><a href="cmyk2pdf.html">CMYK2PDF</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+    <div class="version-container">
+        <strong>1.1.1.0:</strong>
+        <ul>
+            <li>初期リリース (CMYK + 特色 1BIT TIFFをPDFに変換)</li>
+            <li>PDFlib_dotnetライセンス購入後、キーを"licensekeys.txt"に登録必要</li>
+        </ul>
+        <a href="https://www.dropbox.com/scl/fi/5afoivm48iil78m5t8ygc/CMYK2PDF_v1.1.1.0.zip?rlkey=zvube1mfm8lo8ed4ehv3qwe60&dl=0" class="download-link" target="_blank">Download Version 1.1.1.0</a>
+        <a href="https://www.dropbox.com/scl/fi/ixw10hlqyc4skkvdkessy/CMYK2PDF_v1.1.1.0.docx?rlkey=n04g8ctxupiq6aaawiz4r6uyt&dl=0" class="download-link" target="_blank">Download 説明書</a>
+    </div>
+
+</div>
+
+</body>
+</html>

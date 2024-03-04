@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+    }
+
+    .app-container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    .version-container {
+        margin-bottom: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        border: 2px solid #444; /* Set slightly darker border color */
+        padding: 15px;
+    }
+
+    .version-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .download-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .download-link:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="#">Webtech Inc.</a></li>
+      <li class="active"><a href="bisai.html">BISAI</a></li>
+      <li><a href="tiff-trans2.html">TIFF-TRANS2</a></li>
+      <li><a href="cmyk2pdf.html">CMYK2PDF</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+    <div class="version-container">
+        <strong>2024.01.10:</strong>
+        <ul>
+            <li>bsInsp.exe
+                <ul>
+                    <li>マスタファイル名に"CMYK"が含まれる場合、検査直前に平滑化を実施</li>
+                </ul>
+            </li>
+            <li>iPath.dll
+                <ul>
+                    <li>AutoLut時、CMYK合成マスタの場合、(128,0,0) (0,128,0) (0,0,128)色エリアを探し、ターゲットの対応エリアの平均値でLutを作成</li>
+                    <li>AutoLut時、CMYK合成マスタの場合、ベタエリア探しはしない</li>
+                    <li>分割マッチングによるブロックエリアがターゲットの右端外になり例外(20399)を防止</li>
+                </ul>
+            </li>
+        </ul>
+        <a href="https://www.dropbox.com/scl/fi/wrzm45rdz386dz4i0groj/BISAI_Release_20240110.zip?rlkey=mkvan1fthudmtotwr1oxnxlv1&dl=0" class="download-link" target="_blank">Download Version 2024.01.10</a>
+    </div>
+
+</div>
+
+</body>
+</html>
